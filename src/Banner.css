@@ -31,3 +31,15 @@
 .banner_info h5 {
 	margin-top: 10px;
 }
+
+.banner_search {
+	display: flex;
+	flex-direction: column;
+}
+
+.banner_searchButton {
+	background-color: white !important;
+	font-weight: 900 !important;
+	text-transform: inherit !important;
+	color: #ff7779 !important;
+}
