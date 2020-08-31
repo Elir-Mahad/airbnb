@@ -6,7 +6,6 @@ import Banner from "./Banner";
 function Home() {
 	return (
 		<div className="home">
-			<H1>Home</H1>
 			<Header />
 			<Banner />
 		</div>
