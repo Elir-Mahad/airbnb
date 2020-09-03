@@ -5,7 +5,7 @@
 	width: 100vw;
 }
 
-.search h2 {
+.search > h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -17,7 +17,7 @@
 	top: 380px;
 }
 
-.search input {
+.search > input {
 	width: 539px;
 	padding: 20px;
 	position: absolute;
@@ -27,7 +27,22 @@
 	border: none;
 }
 
-.search input:focus {
+.search > input:focus {
 	/* when the search input field is focused on, make the outline width 0 (i.e, make it dissappear) */
 	outline-width: 0;
+}
+
+.search > button {
+	position: absolute;
+	left: 0;
+	top: 480px;
+	text-transform: inherit !important;
+	background-color: #ff7779;
+	color: white;
+	width: 579px;
+}
+
+.search button:hover {
+	background-color: white;
+	color: #ff7779;
 }
