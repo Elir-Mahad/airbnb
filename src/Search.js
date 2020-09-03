@@ -1,17 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
 
-// date range picker imports-
+// Date range picker imports from https://www.npmjs.com/package/react-date-range-
+// This tool will create a calendar for the user
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 
-// SEARCH FOR AVALIABLE DATES/ DATE PICKER COMPONENT
+// This component is the date picker component
+// The user will pick two dates to search for all avaliable rentals
 
 function Search() {
+	const [startDate, setStartDate] = useState(new Date());
+	const [endDate, setEndDate] = useState(new Date());
+	const selectionRange = {
+		startDate: startDate,
+		endDate: endDate,
+		key: "selection"
+	}; // The above three constants are used to manipulate the date range plugin
+
+	function handleSelect(ranges) {
+		// When the element thats attached to this function is clicked
+		setStartDate(ranges.selection.startDate);
+		// set the start date whatever range you selected as the start date
+		setEndDate(ranges.selection.endDate);
+		// set the end date whatever range you selected as the end date
+	}
+
 	return (
 		<div className="search">
-			<h1>Show date picker </h1>
+			<DateRangePicker
+				//
+				ranges={[selectionRange]}
+				//
+				onChange={handleSelect}
+				//
+			/>
 		</div>
 	);
 }
