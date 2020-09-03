@@ -24,7 +24,15 @@ function Banner() {
 					className="banner_searchButton"
 					variant="outlined"
 				>
-					Search Dates
+					{showSearch ? "Hide" : "Search Dates"}
+					{/* If showSearch is true 
+						(i.e, if the button above, 
+						which has the showSearch function attached to it, 
+						is clicked on), 
+						then show the string 'hide' on the button; 
+						this will indicate that it has been clicked.
+						Otherwise, if the button has not been clicked,
+						then show the string 'search dates' on it. */}
 				</Button>
 			</div>
 			<div className="banner_info">
