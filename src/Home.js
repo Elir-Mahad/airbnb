@@ -8,6 +8,16 @@ function Home() {
 		<div className="home">
 			<Header />
 			<Banner />
+			<div className="home_section">
+				<Card />
+				<Card />
+				<Card />
+			</div>
+			<div className="home_section">
+				<Card />
+				<Card />
+				<Card />
+			</div>
 		</div>
 	);
 }
