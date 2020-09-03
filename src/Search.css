@@ -26,3 +26,8 @@
 	top: 420px;
 	border: none;
 }
+
+.search input:focus {
+	/* when the search input field is focused on, make the outline width 0 (i.e, make it dissappear) */
+	outline-width: 0;
+}

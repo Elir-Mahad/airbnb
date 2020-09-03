@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Search.css";
 
 // Material ui imports
+import PeopleIcon from "@material-ui/icons/People";
 import { Button } from "@material-ui/core";
-// import { PeopleIcon } from "@material-ui/icons/People";
 
 // Date range picker imports from https://www.npmjs.com/package/react-date-range-
 // This tool will create a calendar for the user
@@ -36,7 +36,7 @@ function Search() {
 			<DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
 			<h2>
 				Number of guests
-				{/* <PeopleIcon /> */}
+				<PeopleIcon />
 			</h2>
 			<input min={0} defaultValue={2} type="number" />
 			<Button> Search Airbnb </Button>
