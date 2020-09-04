@@ -17,7 +17,24 @@ function SearchPage() {
 				<Button variant="outlined">Rooms and beds</Button>
 				<Button variant="outlined">More filters</Button>
 			</div>
-			<SearchResult />
+			<SearchResult
+				img="https://a0.muscache.com/im/pictures/314fc383-04c6-49b4-8459-36d7327e2a04.jpg?aki_policy=large"
+				location="Private room in center of London"
+				title="Stay at this spacious Edwardian House"
+				description=" 1 guest . 1 bedroom . 1 bed . 1 shared bathroom"
+				star={4.73}
+				price="$30/night"
+				total="117/total"
+			/>
+			<SearchResult
+				img="https://a0.muscache.com/im/pictures/314fc383-04c6-49b4-8459-36d7327e2a04.jpg?aki_policy=large"
+				location="Private room in center of London"
+				title="Stay at this spacious Edwardian House"
+				description=" 1 guest . 1 bedroom . 1 bed . 1 shared bathroom"
+				star={4.73}
+				price="$30/night"
+				total="117/total"
+			/>
 		</div>
 	);
 }
