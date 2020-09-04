@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
+import { useHistory } from "react-router-dom";
 
 // Material ui imports
 import PeopleIcon from "@material-ui/icons/People";
@@ -15,6 +16,8 @@ import { DateRangePicker } from "react-date-range";
 // The user will pick two dates to search for all avaliable rentals
 
 function Search() {
+	const history = useHistory();
+	// the constant history stores the function useHistory which is imported from react-router-dom
 	const [startDate, setStartDate] = useState(new Date());
 	const [endDate, setEndDate] = useState(new Date());
 	const selectionRange = {
@@ -39,7 +42,7 @@ function Search() {
 				<PeopleIcon />
 			</h2>
 			<input min={0} defaultValue={2} type="number" />
-			<Button> Search Airbnb </Button>
+			<Button onClick={() => history.push("/search")}> Search Airbnb </Button>
 		</div>
 	);
 }

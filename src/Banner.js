@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 
 function Banner() {
 	const history = useHistory();
-	// this is a history/record of the pages that you went to
+	// the constant history stores the function useHistory which is imported from react-router-dom
 
 	const [showSearch, setShowSearch] = useState(false);
 	// This constant is set to false because we only want it to appear when the button is clicked.
