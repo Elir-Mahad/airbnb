@@ -4,7 +4,12 @@ import "./Banner.css";
 import { Button } from "@material-ui/core";
 import Search from "./Search";
 
+import { useHistory } from "react-router-dom";
+
 function Banner() {
+	const history = useHistory();
+	// this is a history/record of the pages that you went to
+
 	const [showSearch, setShowSearch] = useState(false);
 	// This constant is set to false because we only want it to appear when the button is clicked.
 	// For testing purposes, if you change the useState to true,
@@ -40,7 +45,15 @@ function Banner() {
 				<h5>
 					Plan a different kind of getaway to uncover the hidden gems near you.
 				</h5>
-				<Button variant="outline"> Explore Nearby</Button>
+				<Button
+					onClick={() => history.push("/search")}
+					// on click, this function:
+					// go into the history (this is imported from react router)
+					// push the page  '/search' into the history (ie, display the page with /search link)
+					variant="outline"
+				>
+					Explore Nearby
+				</Button>
 			</div>
 		</div>
 	);
