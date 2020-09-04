@@ -22,3 +22,23 @@
 	min-height: 200px;
 	width: 100%;
 }
+
+.card_info {
+	margin-top: -9px;
+	border-radius: 10px;
+	padding: 20x;
+	padding-top: 20px;
+	border: 1;
+}
+
+.card_info > h2 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.card_info > h4 {
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
